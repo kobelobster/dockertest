@@ -26,6 +26,4 @@ services:
         volumes:
             - ../citynavigator:/var/www/app
         environment:
-          - XDEBUG_HOST=${LOCAL_IP}
-          - XDEBUG_PORT=9000
-          - XDEBUG_REMOTE_MODE=req
+            XDEBUG_CONFIG: remote_host=192.168.0.115
